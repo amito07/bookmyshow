@@ -42,3 +42,26 @@ export const sliderList = () => {
     },
   ];
 };
+
+export const posters = [
+    {
+      image: '/src/assets/poster/p1.png',
+      name: "slider 1",
+    },
+    {
+      image: "/src/assets/poster/p2.png",
+      name: "slider 2",
+    },
+    {
+      image: "/src/assets/poster/p3.png",
+      name: "slider 3",
+    },
+    {
+      image: "/src/assets/poster/p4.png",
+      name: "slider 4",
+    },
+    {
+      image: "/src/assets/poster/p5.png",
+      name: "slider 4",
+    }
+]

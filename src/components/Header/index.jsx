@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]">
       <div className="flex flex-wrap items-center justify-between gap-5 relative">
-        <a href="javascript:void(0)">
+        <a href="#">
           <img
             src="/src/assets/logo.png"
             alt="logo"
@@ -26,9 +26,9 @@ const Header = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
@@ -39,7 +39,7 @@ const Header = () => {
         >
           <li className="max-lg:border-b max-lg:bg-[#007bff] max-lg:py-2 px-3 max-lg:rounded">
             <a
-              href="javascript:void(0)"
+              href="#"
               className="lg:hover:text-[#007bff] text-[#007bff] max-lg:text-white block font-semibold text-[15px]"
             >
               Home
@@ -47,7 +47,7 @@ const Header = () => {
           </li>
           <li className="max-lg:border-b max-lg:py-2 px-3 max-lg:rounded">
             <a
-              href="javascript:void(0)"
+              href="#"
               className="lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
             >
               Team
@@ -55,7 +55,7 @@ const Header = () => {
           </li>
           <li className="max-lg:border-b max-lg:py-2 px-3 max-lg:rounded">
             <a
-              href="javascript:void(0)"
+              href="#"
               className="lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
             >
               Feature
@@ -63,7 +63,7 @@ const Header = () => {
           </li>
           <li className="max-lg:border-b max-lg:py-2 px-3 max-lg:rounded">
             <a
-              href="javascript:void(0)"
+              href="#"
               className="lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
             >
               Blog
@@ -71,7 +71,7 @@ const Header = () => {
           </li>
           <li className="max-lg:border-b max-lg:py-2 px-3 max-lg:rounded">
             <a
-              href="javascript:void(0)"
+              href="#"
               className="lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
             >
               About
@@ -79,7 +79,7 @@ const Header = () => {
           </li>
           <li className="max-lg:border-b max-lg:py-2 px-3 max-lg:rounded">
             <a
-              href="javascript:void(0)"
+              href="#"
               className="lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
             >
               Contact
