@@ -3,11 +3,21 @@ import { coming_posters, posters, tabNames } from "../../utils/function";
 import Tab from "../Tab";
 import PosterComponent from "../Poster";
 import BuyTickets from "../BuyTickets";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const ShowMovies = () => {
   const [activeTab, setActiveTab] = useState("profile");
+  const navigate = useNavigate()
 
   console.log("activeTab", activeTab);
+
+  useEffect(() => {
+    if (activeTab === "show_times") {
+      console.log('Hiiiiiiiiiii')
+      navigate('/showtime');
+    }
+  }, [activeTab]);
 
   return (
     <>
@@ -35,6 +45,7 @@ const ShowMovies = () => {
           <PosterComponent posters={coming_posters} />
         )}
         {activeTab === "buy_tickets" && <BuyTickets />}
+        {activeTab === "show_times" && <Link to="/showtime" />}
       </div>
     </>
   );
