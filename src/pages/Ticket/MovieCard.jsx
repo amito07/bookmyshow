@@ -7,9 +7,9 @@ const MovieCard = ({ data }) => {
         {data.map((v, i) => (
           <div
             key={i}
-            className="basis-2/12 w-32 shadow-[0_8px_30px_rgb(0,0,0,0.12)] cursor-pointer p-1 flex flex-col items-center"
+            className="basis-2/12 lg:basis-2/12 w-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-1 cursor-pointer flex flex-col items-center"
           >
-            <img src={v.image} className="w-32" />
+            <img src={v.image} className="w-20" />
             <p className="font-light">Dummy Movie</p>
           </div>
         ))}
