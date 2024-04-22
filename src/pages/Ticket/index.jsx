@@ -42,33 +42,53 @@ const Ticket = () => {
             <div className="space-y-2">
               <div className="flex flex-row justify-between">
                 <h1 className="font-bold flex">
-                  <DateIcon/>
+                  <DateIcon />
                   Show-Date
-                  </h1>
+                </h1>
                 <h1>2024-04-22</h1>
               </div>
               <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex"><FilmIcon/> Hall Name</h1>
+                <h1 className="font-bold flex">
+                  <FilmIcon /> Hall Name
+                </h1>
                 <h1>Hall 6</h1>
               </div>
               <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex"><ClockIcon/> Show Time</h1>
+                <h1 className="font-bold flex">
+                  <ClockIcon /> Show Time
+                </h1>
                 <h1>5:40 PM</h1>
               </div>
               <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex"> <ClockIcon/>Seat Type</h1>
+                <h1 className="font-bold flex">
+                  {" "}
+                  <ClockIcon />
+                  Seat Type
+                </h1>
                 <h1>Premium</h1>
               </div>
               <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex"> <ClockIcon/>Ticket Quantity</h1>
+                <h1 className="font-bold flex">
+                  {" "}
+                  <ClockIcon />
+                  Ticket Quantity
+                </h1>
                 <h1>2</h1>
               </div>
               <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex"> <ClockIcon/>Selected Seat</h1>
+                <h1 className="font-bold flex">
+                  {" "}
+                  <ClockIcon />
+                  Selected Seat
+                </h1>
                 <h1>A4, A6</h1>
               </div>
               <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex"> <ClockIcon/>Total Amount</h1>
+                <h1 className="font-bold flex">
+                  {" "}
+                  <ClockIcon />
+                  Total Amount
+                </h1>
                 <h1>900TK</h1>
               </div>
             </div>
