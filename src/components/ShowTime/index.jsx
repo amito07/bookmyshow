@@ -1,15 +1,14 @@
-import React from "react";
-import { StarIcon, TicketIcon, TimeIcon } from "../../utils/icons";
+import { StarIcon, TimeIcon } from "../../utils/icons";
 import ButtonComponent from "../../utils/Button";
 import TimeShow from "./TimeShow";
 
 const ShowTimeComponent = () => {
   return (
-    <div class="flex flex-row flex-wrap">
+    <div className="flex flex-row flex-wrap">
       <div className="basis-2/4 lg:basis-1/4 flex justify-center items-center">
         <img src="src/assets/poster/p13.png" className="w-60 h-4/5 p-1" />
       </div>
-      <div class="basis-2/4 lg:basis-1/4">
+      <div className="basis-2/4 lg:basis-1/4">
         <div className="p-1">
           <p className="font-bold">Godzilla x Kong: The New Empire (3D) </p>
           <br />
@@ -48,7 +47,7 @@ const ShowTimeComponent = () => {
           <ButtonComponent Name="Watch Tailer" />
         </div>
       </div>
-      <div class="basis-full lg:basic-full flex flex-row justify-evenly mt-5">
+      <div className="basis-full lg:basic-full flex flex-row justify-evenly mt-5">
         {[1, 2, 3].map((item, index) => (
           <TimeShow key={index} />
         ))}
