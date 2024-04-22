@@ -118,3 +118,46 @@ export const payment_info = [
     img_url: "/src/assets/payments/bkash.png",
   },
 ];
+
+export const running_movies = [
+  {
+    image: "/src/assets/poster/p1.png",
+    name: "slider 1",
+  },
+  {
+    image: "/src/assets/poster/p2.png",
+    name: "slider 2",
+  },
+  {
+    image: "/src/assets/poster/p3.png",
+    name: "slider 3",
+  },
+  {
+    image: "/src/assets/poster/p4.png",
+    name: "slider 4",
+  },
+  {
+    image: "/src/assets/poster/p5.png",
+    name: "slider 5",
+  },
+  {
+    image: "/src/assets/poster/p6.png",
+    name: "slider 6",
+  },
+  {
+    image: "/src/assets/poster/p7.png",
+    name: "slider 7",
+  },
+  {
+    image: "/src/assets/poster/p8.png",
+    name: "slider 8",
+  },
+  {
+    image: "/src/assets/poster/p9.png",
+    name: "slider 9",
+  },
+  {
+    image: "/src/assets/poster/p10.png",
+    name: "slider 10",
+  },
+];
