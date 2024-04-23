@@ -5,11 +5,18 @@ import { running_movies } from "../../utils/function";
 import TimeCard from "./TimeCard";
 import SeatCard from "./SeatCard";
 import TicketCount from "./TicketCount";
-import { ClockIcon, DateIcon, FilmIcon } from "../../utils/icons";
 import { useState } from "react";
+import TicketCard from "./TicketCard";
+import { ticketSummary } from "../../utils/data";
 
 const Ticket = () => {
-  const [ticketCount, setTicketCount] = useState(0)
+  const [ticketCount, setTicketCount] = useState(0);
+  const [summaryTicket, setSummaryTicket] = useState(ticketSummary);
+  const [isMovieCardSelected, setIsMovieCardSelected] = useState(false);
+  const [isTimeCardSelected, setIsTimeCardSelected] = useState(false);
+  const [isSeatCardSelected, setIsSeatCardSelected] = useState(false);
+
+  console.log("summaryTicket", summaryTicket);
   return (
     <>
       <Header />
@@ -19,86 +26,36 @@ const Ticket = () => {
             <DateCard data={[1, 2, 3]} />
           </section>
           <section>
-            <MovieCard data={running_movies} />
+            <MovieCard
+              data={running_movies}
+              setSummaryTicket={setSummaryTicket}
+              setIsMovieCardSelected={setIsMovieCardSelected}
+            />
           </section>
-          <section>
-            <TimeCard />
-          </section>
+          <section>{isMovieCardSelected ? <TimeCard setIsTimeCardSelected={setIsTimeCardSelected} setSummaryTicket={setSummaryTicket}  /> : <></>}</section>
           <section className="grid grid-cols-12 space-y-5 lg:space-y-0">
-            <div className="col-span-12 lg:col-start-1 col-end-5">
-              <SeatCard />
-            </div>
-            <div className="col-span-12 lg:col-start-6 col-end-12">
-              <TicketCount ticketCount={ticketCount} setTicketCount={setTicketCount} />
-            </div>
+            {isTimeCardSelected ? (
+              <div className="col-span-12 lg:col-start-1 col-end-5">
+                <SeatCard setIsSeatCardSelected={setIsSeatCardSelected} setSummaryTicket={setSummaryTicket} />
+              </div>
+            ) : (
+              <></>
+            )}
+            {isSeatCardSelected ? (
+              <div className="col-span-12 lg:col-start-6 col-end-12">
+                <TicketCount
+                  ticketCount={ticketCount}
+                  setTicketCount={setTicketCount}
+                  setSummaryTicket = {setSummaryTicket}
+                />
+              </div>
+            ) : (
+              <></>
+            )}
           </section>
         </div>
         <div>
-          <h1 className="font-bold font-mono text-2xl">Tickets Summary</h1>{" "}
-          <br />
-          <div className="flex flex-col border-2 space-y-4 p-4">
-            <div className="flex flex-row space-x-4">
-              <img src="src/assets/poster/p13.png" className="w-24" />
-              <span>
-                <p className="font-light">3D</p>
-                <p className="font-light">Joker 4</p>
-                <p className="font-light">Duration: 94min</p>
-              </span>
-            </div>
-            <div className="space-y-2">
-              <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex">
-                  <DateIcon />
-                  Show-Date
-                </h1>
-                <h1>2024-04-22</h1>
-              </div>
-              <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex">
-                  <FilmIcon /> Hall Name
-                </h1>
-                <h1>Hall 6</h1>
-              </div>
-              <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex">
-                  <ClockIcon /> Show Time
-                </h1>
-                <h1>5:40 PM</h1>
-              </div>
-              <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex">
-                  {" "}
-                  <ClockIcon />
-                  Seat Type
-                </h1>
-                <h1>Premium</h1>
-              </div>
-              <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex">
-                  {" "}
-                  <ClockIcon />
-                  Ticket Quantity
-                </h1>
-                <h1>2</h1>
-              </div>
-              <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex">
-                  {" "}
-                  <ClockIcon />
-                  Selected Seat
-                </h1>
-                <h1>A4, A6</h1>
-              </div>
-              <div className="flex flex-row justify-between">
-                <h1 className="font-bold flex">
-                  {" "}
-                  <ClockIcon />
-                  Total Amount
-                </h1>
-                <h1>900TK</h1>
-              </div>
-            </div>
-          </div>
+          <TicketCard summaryTicket={summaryTicket} />
         </div>
       </div>
     </>
