@@ -1,60 +1,76 @@
-import React from "react";
+import { ClockIcon, DateIcon, FilmIcon } from "../../utils/icons";
 
-const TicketCard = () => {
+const TicketCard = ({summaryTicket}) => {
+  const {movie_url, movie_name, movie_duration, show_date, hall_name, show_time, seat_type, ticket_quantity, selected_seat, total_amount} = summaryTicket
   return (
-    <div class="max-w-md mx-auto my-8">
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img
-          src="src/assets/poster/p13.png"
-          alt="Movie Poster"
-          class="w-full h-auto"
-        />
-        <div class="p-4">
-          <div class="text-xl font-bold mb-2">Movie Name</div>
-          <p class="text-gray-700 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris.
-          </p>
-          <div class="border-t border-b border-gray-300 py-4">
-            <div class="grid grid-cols-2 gap-x-4 mb-4">
-              <div>
-                <div class="text-gray-600 font-semibold">Show Date</div>
-                <div class="text-gray-800">April 22, 2024</div>
-              </div>
-              <div>
-                <div class="text-gray-600 font-semibold">Hall Name</div>
-                <div class="text-gray-800">Cinema City</div>
-              </div>
-            </div>
-            <div class="grid grid-cols-2 gap-x-4 mb-4">
-              <div>
-                <div class="text-gray-600 font-semibold">Show Time</div>
-                <div class="text-gray-800">12:30 PM</div>
-              </div>
-              <div>
-                <div class="text-gray-600 font-semibold">Seat Type</div>
-                <div class="text-gray-800">Standard</div>
-              </div>
-            </div>
-            <div class="grid grid-cols-2 gap-x-4 mb-4">
-              <div>
-                <div class="text-gray-600 font-semibold">Ticket Quantity</div>
-                <div class="text-gray-800">2</div>
-              </div>
-              <div>
-                <div class="text-gray-600 font-semibold">Selected Seats</div>
-                <div class="text-gray-800">A12, A13</div>
-              </div>
-            </div>
-            <div class="text-xl font-bold mb-2">Total Amount</div>
-            <div class="text-2xl text-gray-800">$20.00</div>
+    <>
+      <h1 className="font-bold font-mono text-2xl">Tickets Summary</h1> <br />
+      <div className="grid grid-cols-4 border-2 space-y-4 p-4 place-content-center">
+        <div className="space-x-4">
+          <img src={movie_url ? movie_url : "/src/assets/poster/p1.png"} className="w-24 col-span-2" />
+        </div>
+        <div className="col-span-2 ml-2">
+          <span>
+            <p className="font-bold font-mono">3D</p>
+            <p className="font-bold font-mono">{movie_name ? movie_name : "Not Select"}</p>
+            <p className="font-bold font-mono">Duration: {movie_duration ? `${movie_duration} min` : "00 min"}</p>
+          </span>
+        </div>
+        <div className="space-y-2 col-span-4">
+          <div className="flex flex-row justify-between">
+            <h1 className="font-bold flex">
+              <DateIcon />
+              Show-Date
+            </h1>
+            <h1>{show_date ? show_date : "00-00-00"}</h1>
           </div>
-          <button class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md mt-4 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-            Purchase Ticket
-          </button>
+          <div className="flex flex-row justify-between">
+            <h1 className="font-bold flex">
+              <FilmIcon /> Hall Name
+            </h1>
+            <h1>{hall_name ? hall_name : '--'}</h1>
+          </div>
+          <div className="flex flex-row justify-between">
+            <h1 className="font-bold flex">
+              <ClockIcon /> Show Time
+            </h1>
+            <h1>{show_time ? show_time : '--'}</h1>
+          </div>
+          <div className="flex flex-row justify-between">
+            <h1 className="font-bold flex">
+              {" "}
+              <ClockIcon />
+              Seat Type
+            </h1>
+            <h1>{seat_type ? seat_type : '--'}</h1>
+          </div>
+          <div className="flex flex-row justify-between">
+            <h1 className="font-bold flex">
+              {" "}
+              <ClockIcon />
+              Ticket Quantity
+            </h1>
+            <h1>{ticket_quantity ? ticket_quantity : '--'}</h1>
+          </div>
+          <div className="flex flex-row justify-between">
+            <h1 className="font-bold flex">
+              {" "}
+              <ClockIcon />
+              Selected Seat
+            </h1>
+            <h1>{selected_seat ? selected_seat : '--'}</h1>
+          </div>
+          <div className="flex flex-row justify-between">
+            <h1 className="font-bold flex">
+              {" "}
+              <ClockIcon />
+              Total Amount
+            </h1>
+            <h1>{total_amount ? `${total_amount} TK` : '0 TK'}</h1>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

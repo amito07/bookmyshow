@@ -1,12 +1,10 @@
-import React from "react";
-
 const Header = () => {
   return (
     <header className="shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]">
       <div className="flex flex-wrap items-center justify-between gap-5 relative">
         <a href="#">
           <img
-            src="/src/assets/logo.png"
+            src="/src/assets/logo2.png"
             alt="logo"
             className="w-16"
           />
