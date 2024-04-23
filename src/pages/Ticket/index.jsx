@@ -6,8 +6,10 @@ import TimeCard from "./TimeCard";
 import SeatCard from "./SeatCard";
 import TicketCount from "./TicketCount";
 import { ClockIcon, DateIcon, FilmIcon } from "../../utils/icons";
+import { useState } from "react";
 
 const Ticket = () => {
+  const [ticketCount, setTicketCount] = useState(0)
   return (
     <>
       <Header />
@@ -22,9 +24,13 @@ const Ticket = () => {
           <section>
             <TimeCard />
           </section>
-          <section className="flex flex-row justify-evenly">
-            <SeatCard />
-            <TicketCount />
+          <section className="grid grid-cols-12 space-y-5 lg:space-y-0">
+            <div className="col-span-12 lg:col-start-1 col-end-5">
+              <SeatCard />
+            </div>
+            <div className="col-span-12 lg:col-start-6 col-end-12">
+              <TicketCount ticketCount={ticketCount} setTicketCount={setTicketCount} />
+            </div>
           </section>
         </div>
         <div>

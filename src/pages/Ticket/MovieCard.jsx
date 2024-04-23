@@ -1,9 +1,8 @@
 const MovieCard = ({ data }) => {
-  console.log("data", data);
   return (
     <>
       <h1 className="font-bold font-mono text-2xl">Select Movie (9)</h1> <br />
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-4 lg:grid-cols-8 gap-1">
         {data.map((v, i) => (
           <div
             key={i}
