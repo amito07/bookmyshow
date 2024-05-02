@@ -1,12 +1,25 @@
 import React from "react";
+import { running_movies } from "../../utils/function";
 
 const LatestNews = () => {
   return (
-    <div className="flex flex-row justify-evenly">
-      <div>04</div>
-      <div>05</div>
-      <div>06</div>
-    </div>
+    <>
+      <section className="text-center">
+        <h1 className="font-bold text-4xl">Latest Movies</h1>
+      </section>
+      <section>
+        <marquee>
+          <div className="grid grid-cols-5 md:grid-cols-12 gap-2">
+            {/* <marquee>This text will scroll from right to left</marquee> */}
+            {running_movies.map((x, i) => (
+              <div key={i}>
+                <img src={x.image} />
+              </div>
+            ))}
+          </div>
+        </marquee>
+      </section>
+    </>
   );
 };
 
