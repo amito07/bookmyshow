@@ -1,15 +1,27 @@
-const TicketCount = ({ticketCount, setTicketCount}) => {
+const TicketCount = ({ticketCount, setTicketCount, setSummaryTicket}) => {
 
   const IncreaseTicket = () =>{
     console.log("Increasing ticket count")
     if(ticketCount < 10){
       setTicketCount(ticketCount + 1)
+      setSummaryTicket((prev)=>({
+        ...prev,
+        ticket_quantity: ticketCount + 1,
+        total_amount: 900* (ticketCount + 1)
+  
+      }))
     }
   }
 
   const DecreateTicket = () =>{
     if(ticketCount > 0){
       setTicketCount(ticketCount - 1)
+      setSummaryTicket((prev)=>({
+        ...prev,
+        ticket_quantity: ticketCount - 1,
+        total_amount: 900* (ticketCount - 1)
+  
+      }))
     }
   }
   return (

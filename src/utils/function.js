@@ -122,42 +122,52 @@ export const payment_info = [
 export const running_movies = [
   {
     image: "/src/assets/poster/p1.png",
-    name: "slider 1",
+    name: "Kraven The Hunter",
+    duration: 90
   },
   {
     image: "/src/assets/poster/p2.png",
-    name: "slider 2",
+    name: "Fall Guy",
+    duration: 120
   },
   {
     image: "/src/assets/poster/p3.png",
-    name: "slider 3",
+    name: "Ghostbusters",
+    duration: 80
   },
   {
     image: "/src/assets/poster/p4.png",
-    name: "slider 4",
+    name: "Planet of the apes",
+    duration: 130
   },
   {
     image: "/src/assets/poster/p5.png",
-    name: "slider 5",
+    name: "Furiosa",
+    duration: 145
   },
   {
     image: "/src/assets/poster/p6.png",
-    name: "slider 6",
+    name: "Muchachos",
+    duration: 150
   },
   {
     image: "/src/assets/poster/p7.png",
-    name: "slider 7",
+    name: "Watchers",
+    duration: 90
   },
   {
     image: "/src/assets/poster/p8.png",
-    name: "slider 8",
+    name: "Bad boys 4",
+    duration: 90
   },
   {
     image: "/src/assets/poster/p9.png",
-    name: "slider 9",
+    name: "Transformers One",
+    duration: 90
   },
   {
     image: "/src/assets/poster/p10.png",
-    name: "slider 10",
+    name: "Hear how it all began",
+    duration: 90
   },
 ];
