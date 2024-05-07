@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      sans: [
+        '"Segoe UI"',
+        'Roboto',
+        'sans-serif',
+      ],
+    }
   },
   plugins: [],
 }
