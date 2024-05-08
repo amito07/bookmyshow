@@ -1,13 +1,12 @@
-import Banner from '../../components/Banner'
-import Header2 from '../../components/Header2'
+import Banner from "../../components/Banner";
+import FeatureMovies from "../../components/FeatureMovies";
 const Home2 = () => {
   return (
-    <>
-    <Header2/>
-    <Banner/>
-    <div>Home2</div>
-    </>
-  )
-}
+    <div className="flex flex-col">
+      <Banner />
+      <FeatureMovies/>
+    </div>
+  );
+};
 
-export default Home2
+export default Home2;
