@@ -1,3 +1,5 @@
+import MovieList from "./MovieList";
+
 const FeatureMovies = () => {
   return (
     <>
@@ -49,6 +51,7 @@ const FeatureMovies = () => {
           </li>
         </ul>
       </div>
+      <MovieList/>
     </>
   );
 };

@@ -1,36 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination } from 'swiper/modules';
-
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-
-import '../../CSS/swiper2.css';
-
-
 const MovieList = () => {
   return (
     <>
-    <Swiper
-      slidesPerView={3}
-      spaceBetween={30}
-      freeMode={true}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[FreeMode, Pagination]}
-      className="mySwiper"
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
-      <SwiperSlide>Slide 6</SwiperSlide>
-      <SwiperSlide>Slide 7</SwiperSlide>
-      <SwiperSlide>Slide 8</SwiperSlide>
-      <SwiperSlide>Slide 9</SwiperSlide>
-    </Swiper>
+    <div className="relative">
+      <img src="/src/assets/poster/p1.png" className="border-2 rounded-lg"/>
+      <h1 className="text-white absolute font-light text-sm border-2 border-red-600 rounded-3xl px-2 bottom-2 left-2 bg-red-600 cursor-pointer">Movie Name</h1>
+    </div>
   </>
   )
 }
