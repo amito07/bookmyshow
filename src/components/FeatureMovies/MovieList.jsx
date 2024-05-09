@@ -1,12 +1,18 @@
+import MovieCard from "./MovieCard";
+
 const MovieList = () => {
   return (
     <>
-    <div className="relative">
-      <img src="/src/assets/poster/p1.png" className="border-2 rounded-lg"/>
-      <h1 className="text-white absolute font-light text-sm border-2 border-red-600 rounded-3xl px-2 bottom-2 left-2 bg-red-600 cursor-pointer">Movie Name</h1>
-    </div>
-  </>
-  )
-}
+      <div className="grid grid-cols-6 lg:grid-cols-12 gap-3 place-items-center mt-6">
+        {
+        [0,1,2,3,4,5].map((v, i)=>(
+          <MovieCard key={i}/>
+        ))
 
-export default MovieList
+        }
+      </div>
+    </>
+  );
+};
+
+export default MovieList;
