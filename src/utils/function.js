@@ -171,3 +171,54 @@ export const running_movies = [
     duration: 90
   },
 ];
+
+export const movies = [
+  {
+    image: "/src/assets/movies/ant man.jpg",
+    name: "ant man",
+  },
+  {
+    image: "/src/assets/movies/avengers.jpg",
+    name: "avengers",
+  },
+  {
+    image: "/src/assets/movies/jawan.jpg",
+    name: "jawan",
+  },
+  {
+    image: "/src/assets/movies/Jhon Wick.jpg",
+    name: "Jhon Wick",
+  },
+  {
+    image: "/src/assets/movies/jurassic world.jpg",
+    name: "jurassic world",
+  },
+  {
+    image: "/src/assets/movies/kota factory.jpg",
+    name: "kota factory",
+  },
+  {
+    image: "/src/assets/movies/money heist.jpg",
+    name: "money heist",
+  },
+  {
+    image: "/src/assets/movies/moon knight.jpg",
+    name: "moon knight",
+  },
+  {
+    image: "/src/assets/movies/spiderman.jpg",
+    name: "spiderman",
+  },
+  {
+    image: "/src/assets/movies/subedar.jpg",
+    name: "subedar",
+  },
+  {
+    image: "/src/assets/movies/thor love of thunder.jpg",
+    name: "thor love of thunder",
+  },
+  {
+    image: "/src/assets/movies/topgun.jpg",
+    name: "topgun",
+  },
+];

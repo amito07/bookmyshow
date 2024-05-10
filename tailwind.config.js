@@ -7,11 +7,7 @@ export default {
   theme: {
     extend: {},
     fontFamily:{
-      sans: [
-        '"Segoe UI"',
-        'Roboto',
-        'sans-serif',
-      ],
+      'test':["Poetsen One", 'sans-serif']
     }
   },
   plugins: [],
