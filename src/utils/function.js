@@ -123,52 +123,107 @@ export const running_movies = [
   {
     image: "/src/assets/poster/p1.png",
     name: "Kraven The Hunter",
-    duration: 90
+    duration: 90,
+    description:"Kraven the Hunter is an upcoming American superhero film based on the Marvel Comics character of the same name. It is intended to be part of Sony's",
+    genre:"Action, Adventure, Thriller",
+    language:"English",
+    releaseDate: "2023-03-17"
   },
   {
     image: "/src/assets/poster/p2.png",
     name: "Fall Guy",
-    duration: 120
+    duration: 120,
+    description:"The Fall Guy is an American action comedy television program produced for ABC and originally broadcast from November 4, 1981, to May 2, 1986.",
+    genre:"Action, Comedy",
+    language:"English",
+    releaseDate: "2023-03-17"
   },
   {
     image: "/src/assets/poster/p3.png",
     name: "Ghostbusters",
-    duration: 80
+    duration: 80,
+    description:"Ghostbusters is a 1984 American supernatural comedy film directed by Ivan Reitman and written",
+    genre:"Action, Comedy, Fantasy",
+    language:"English",
+    releaseDate: "2023-03-17"
+
   },
   {
     image: "/src/assets/poster/p4.png",
     name: "Planet of the apes",
-    duration: 130
+    duration: 130,
+    description:"Planet of the Apes is a 1968 American science fiction film directed by Franklin J. Schaffner. It stars Charlton Heston, Roddy McDowall, Kim Hunter, Maurice Evans, James Whitmore, James Daly and Linda Harrison.",
+    genre:"Action, Adventure, Drama",
+    language:"English",
+    releaseDate: "2023-03-17"
+
+
   },
   {
     image: "/src/assets/poster/p5.png",
     name: "Furiosa",
-    duration: 145
+    duration: 145,
+    description:"Furiosa is an upcoming American action film directed by George Miller and written by Miller, Nico Lathouris, and Brendan McCarthy.",
+    genre:"Action, Adventure, Sci-Fi",
+    language:"English",
+    releaseDate: "2023-03-17"
+
+
   },
   {
     image: "/src/assets/poster/p6.png",
     name: "Muchachos",
-    duration: 150
+    duration: 150,
+    description:"Muchachos is a 2022 American action comedy film directed by Shawn Levy and written by Bill Dubuque and Mark Levin.",
+    genre:"Action, Comedy",
+    language:"English",
+    releaseDate: "2023-03-17"
+
+
   },
   {
     image: "/src/assets/poster/p7.png",
     name: "Watchers",
-    duration: 90
+    duration: 90,
+    description:"Watchers is a 1988 American horror film directed by Jon Hess and starring Corey Haim, Michael Ironside, Barbara Williams, and Lala Sloatman.",
+    genre:"Horror, Sci-Fi",
+    language:"English",
+    releaseDate: "2023-03-17"
+
+
   },
   {
     image: "/src/assets/poster/p8.png",
     name: "Bad boys 4",
-    duration: 90
+    duration: 90,
+    description:"Watchers is a 1988 American horror film directed by Jon Hess and starring Corey Haim, Michael Ironside, Barbara Williams, and Lala Sloatman.",
+    genre:"Action, Comedy, Crime",
+    language:"English",
+    releaseDate: "2023-03-17"
+
+
   },
   {
     image: "/src/assets/poster/p9.png",
     name: "Transformers One",
-    duration: 90
+    duration: 90,
+    description:"Transformers is a 2007 American science fiction action film based on the Transformers toy line. The film, which combines computer animation with live-action filming, was directed by Michael Bay, with Steven Spielberg serving as executive producer.",
+    genre:"Action, Adventure, Sci-Fi",
+    language:"English",
+    releaseDate: "2023-03-17"
+
+
   },
   {
     image: "/src/assets/poster/p10.png",
     name: "Hear how it all began",
-    duration: 90
+    duration: 90,
+    description:"Transformers is a 2007 American science fiction action film based on the Transformers toy line. The film, which combines computer animation with live-action filming, was directed by Michael Bay, with Steven Spielberg serving as executive producer.",
+    genre:"Action, Adventure, Sci-Fi",
+    language:"English",
+    releaseDate: "2023-03-17"
+
+
   },
 ];
 

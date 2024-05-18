@@ -8,12 +8,11 @@ const Home2 = () => {
   return (
     <div className="flex flex-col">
       <Banner />
-      <FeatureMovies/>
-      <PopularMovieSection/>
-      <BoxOffice/>
-      <TrandingMovies/>
-      <BestSeries/>
-      
+      <FeatureMovies />
+      <PopularMovieSection />
+      <BoxOffice />
+      <TrandingMovies />
+      <BestSeries />
     </div>
   );
 };

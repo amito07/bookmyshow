@@ -8,6 +8,7 @@ import Ticket from "../pages/Ticket";
 import Profile from "../pages/Profile";
 import Home2 from "../pages/Home2";
 import Booking from "../pages/Booking";
+import AdminLandPage from "../pages/Admin";
 Ticket
 
 const RouteComponent = () => {
@@ -22,6 +23,7 @@ const RouteComponent = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/home" element={<Home2 />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/admin" element={<AdminLandPage/>} />
           <Route
             path="/showtime"
             element={

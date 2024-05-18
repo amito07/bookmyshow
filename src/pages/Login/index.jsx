@@ -1,11 +1,25 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { logInAPI } from "../../apis/auth";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { useMutation } from "@tanstack/react-query";
+import { createUser } from "../../modules/Users";
 
 const Login = () => {
   const navigate = useNavigate();
+
+  const { mutate, isPending, isError } = useMutation({
+    mutationFn: (data) => createUser(data),
+    onSuccess: (result) => {
+      toast.success(result.message);
+      localStorage.setItem("token", result?.data?.access_token);
+      navigate("/home");
+    },
+    onError: (error) => {
+      toast.error(error.response.message);
+    },
+  });
+
   const {
     register,
     handleSubmit,
@@ -13,20 +27,7 @@ const Login = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    try {
-      const response = await logInAPI(data);
-      if (response){
-        toast.success(response.message);
-        localStorage.setItem('token', response?.data?.access_token)
-        navigate('/')
-      }else{
-        toast.error("Invalid username or password")
-      }
-      
-    } catch (error) {
-      toast.error(error.response.message)
-      
-    }
+    mutate(data);
   };
   return (
     <div className="flex flex-row justify-center items-center h-screen bg-violet-300">
